@@ -1,15 +1,15 @@
-import ProjectList from './ProjectList';
+import RecipeList from './RecipeList';
 
 const Home = () => {
-  const projects = [  
-    { title: 'Personal Website', body: 'lorem ipsum...', creators: 'Kevin', id: 1 },
-    { title: 'Spotify Song Recommendation App', body: 'lorem ipsum...', creators: 'Kevin', id: 2 },
-    { title: 'Maze Robot', body: 'lorem ipsum...', creators: 'Kevin', id: 3 }
+  const recipes = [  
+    { title: 'Kimchi Fried Rice', body: 'lorem ipsum...', creator: 'Kevin', id: 1 },
+    { title: 'Tomato Soup', body: 'lorem ipsum...', creator: 'Kevin', id: 2 },
+    { title: 'Chicken', body: 'lorem ipsum...', creator: 'Kevin', id: 3 }
   ];
 
   return ( 
     <div className="home">
-      <ProjectList projects={projects} title="My Projects"></ProjectList>
+      <RecipeList recipes={recipes} title="My Recipes"></RecipeList>
     </div> 
   );
 }
